@@ -1,10 +1,10 @@
 export default function taskBlock(trueOrFalse) {
-  let task = false;
-  let task2 = true;
+  const task = false;
+  const task2 = true;
 
   if (trueOrFalse) {
-    task = !task; // Modify a variable task
-    task = !task2; // Modify a variable task2
+    const task = true; // Modify a variable task
+    const task2 = false; // Modify a variable task2
   }
 
   return [task, task2];
