@@ -10,4 +10,6 @@ export default function queryAPI(endpoint) {
   } else {
     weakMap.set(endpoint, 1);
   }
+
+  return weakMap.get(endpoint);
 }
