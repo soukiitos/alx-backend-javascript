@@ -2,7 +2,6 @@
 const fs = require('fs');
 function countStudents(datapath) {
   let data;
-
   try{
     data = fs.readFileSync(datapath);
   } catch (err) {
@@ -25,5 +24,4 @@ function countStudents(datapath) {
     console.log(`Number of students in ${j}: ${fields[j].length}. List: ${fields[j].join(', ')}`);
   }
 }
-
 module.exports = countStudents;
