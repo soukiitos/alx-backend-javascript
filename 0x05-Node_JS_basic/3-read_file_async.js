@@ -16,7 +16,7 @@ function countStudents(path) {
 
       students = students.map((item) => item.split(','));
 
-      const NUMBER_OF_STUDENTS = students.length;
+      const NUMBER_OF_STUDENTS = students.length ? students.length - 1 : 0;
       msg = `Number of students: ${NUMBER_OF_STUDENTS}`;
       console.log(msg);
 
@@ -36,7 +36,7 @@ function countStudents(path) {
       for (const key of Object.keys(fields)) {
         msg = `Number of students in ${key}: ${
           fields[key].length
-	}. List: ${fields[key].join(', ')}`;
+        }. List: ${fields[key].join(', ')}`;
 
         console.log(msg);
 
