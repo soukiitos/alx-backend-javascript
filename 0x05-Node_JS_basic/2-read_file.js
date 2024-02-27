@@ -21,7 +21,9 @@ function countStudents(datapath) {
   }
   delete fieldL.field;
   for (const j of Object.keys(fieldL)) {
-    console.log(`Number of students in ${j}: ${fieldL[j].length}. List: ${fieldL[j].join(', ')}`,);
+    console.log(
+      `Number of students in ${j}: ${fieldL[j].length}. List: ${fieldL[j].join(', ')}`,
+    );
   }
 }
 module.exports = countStudents;
