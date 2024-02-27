@@ -14,7 +14,7 @@ function countStudents(path) {
 
             let students = content.filter((item) => item);
 
-            students = students.map((item) => item.split(', '));
+            students = students.map((item) => item.split(','));
 
             const NUMBER_OF_STUDENTS = students.length ? students.length - 1 : 0;
             msg = `Number of students: ${NUMBER_OF_STUDENTS}`;
