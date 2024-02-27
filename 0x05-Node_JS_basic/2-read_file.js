@@ -22,7 +22,7 @@ function countStudents(datapath) {
   delete fields.field;
   for (const j of Object.keys(fields)) {
     console.log(
-      `Number of students in ${j}: ${fieldL[j].length}. List: ${fieldL[
+      `Number of students in ${j}: ${fields[j].length}. List: ${fields[
         j
       ].join(', ')}`,
     );
