@@ -1,8 +1,9 @@
 // Reading a file synchronously with Node JS
 const fs = require('fs');
+
 function countStudents(datapath) {
   let data;
-  try{
+  try {
     data = fs.readFileSync(datapath);
   } catch (err) {
     throw new Error('Cannot load the database');

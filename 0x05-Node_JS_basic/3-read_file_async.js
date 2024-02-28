@@ -28,7 +28,7 @@ function countStudents(path) {
           if (!fields[students[i][3]]) fields[students[i][3]] = [];
 
           fields[students[i][3]].push(students[i][0]);
-	}
+        }
       }
 
       delete fields.field;
