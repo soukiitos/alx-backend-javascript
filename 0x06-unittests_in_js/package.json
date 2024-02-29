@@ -3,6 +3,10 @@
     "test": "node ./node_modules/mocha/bin/_mocha"
   },
   "dependencies": {
-    "chai": "^5.1.0"
+    "chai": "^5.1.0",
+    "sinon": "^17.0.1"
+  },
+  "devDependencies": {
+    "mocha": "^10.3.0"
   }
 }
