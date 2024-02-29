@@ -15,6 +15,7 @@ const Utils = {
   }
 
   return firstNum + secondNum;
-}
+  }
+};
 
 module.exports = Utils;
