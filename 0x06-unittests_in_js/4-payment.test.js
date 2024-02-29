@@ -6,7 +6,7 @@ const Utils = require('./utils');
 
 describe('Stubs', () => {
   it('Should log the correct msg and stub the calculateNumber', () => {
-    const stubUtils = sinon.stub(Utils, 'calculateNumber').return(10);
+    const stubUtils = sinon.stub(Utils, 'calculateNumber').returns(10);
     const consSpy = sinon.spy(console, 'log');
 
     sendPaymentRequestToApi(100, 20);
