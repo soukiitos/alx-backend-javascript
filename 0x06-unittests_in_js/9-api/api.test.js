@@ -30,14 +30,26 @@ describe('GET cart page', () => {
     });
   });
 
-  it('Response 400 when id is not a number', (done) => {
+  it('Returns 404 for negative number', (done) => {
     const options = {
-      url: 'http://localhost:7865/cart/abc',
+      url: 'http://localhost:7865/cart/-123',
       method: 'GET'
     };
 
     request(options, function (error, response, body) {
-      expect(response.statusCode).to.equal(400);
+      expect(response.statusCode).to.equal(404);
+      done();
+    });
+  });
+
+  it('Response 404 when id is not a number', (done) => {
+    const options = {
+      url: 'http://localhost:7865/cart/ab12-h547-267c',
+      method: 'GET'
+    };
+
+    request(options, function (error, response, body) {
+      expect(response.statusCode).to.equal(404);
       done();
     });
   });
